@@ -1,0 +1,131 @@
+:root{
+    --primary-color: #2D4356;
+    --secondary-color: #0A1334;
+    --fill-color:#14202E;
+    --ligth-color: #89AAC3;
+    --size-small : 15px;
+    --size-medium : 17px;
+    --size-large : 36px;
+    --size-x-large : 46px;
+
+}
+/* fonts */
+@font-face {
+    font-family: 'martel' ;
+    src: url('fonts/Martel/Martel-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'basekerville' ;
+    src: url('fonts/LibreBaskerville-Italic.ttf');
+}
+
+
+/* animations */
+@keyframes blink-border-right {
+    0%{
+        border-right: none;
+    }
+    100%{
+        border-right: 1px solid white;
+    }
+}
+
+@keyframes resize-width {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 1000px;
+    }
+    100%{
+        width: 0;
+    }
+
+}
+
+/* common */
+.cursor-pointer:hover{
+    cursor: pointer;
+}
+.vh-75{
+    height: 75vh;
+}
+
+/* home */
+
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: martel, serif;
+    font-size: var(--size-small);
+    overflow-x: hidden;
+}
+
+#home{
+}
+
+#home .my-image-container{
+    z-index: -1;
+    width: 105%;
+    padding: 0;
+}
+#home .my-image-container div{
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+}
+#home .my-image-container img{
+    width: 100%;
+    height: 100vh;
+    margin-left: -1%;
+    opacity: 0.2;
+}
+
+#header{
+    background-color: var(--secondary-color);
+    color: var(--ligth-color);
+    font-size: 12px;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+#header .navbar{
+    height: 100%;
+    transition-property: margin-left;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    margin-left: 50%;
+}
+#header .navbar > div{
+    margin: 0.5% 1% 0 1%;
+    text-align: center;
+}
+
+#header .navbar div:hover{
+    margin: 0.5% 1% 0 1%;
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+
+#text-welcome{
+    font-family: basekerville, sans-serif;
+    color: white;
+    font-size: var(--size-x-large);
+    overflow: hidden;
+    border-right: 1px solid white;
+    width: auto;
+    padding: 0 0 0 3%;
+    animation: blink-border-right 1s infinite linear;
+}
+
+
+/*  responsive */
+@media (max-width: 576px) {
+    #header .navbar > div{
+        display: none;
+    }
+}

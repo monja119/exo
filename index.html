@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>MONJA</title>
+</head>
+<body>
+    <!-- container fluid -->
+    <div class="container-fluid">
+        <!-- home -->
+        <div class="home mt-0" id="home">
+
+            <!-- my image -->
+            <div class="position-absolute my-image-container row">
+                <div></div>
+                <img class="" src="assets/images/monja.jpg"  alt="monja"/>
+            </div>
+            <!-- ./my image -->
+
+            <!-- header -->
+            <header id="header" class="row flex-nowrap">
+                <div id="me" class="col-2 d-flex flex-row justify-content-start">
+                    <img src="assets/images/illustrations/me.png"
+                         class="figure-img m-2"
+                         alt="monja"
+                    />
+                    <h5 class="mt-2"> MONJA </h5>
+                </div>
+                <div class="col-10 navbar justify-content-end">
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('me')"> Moi </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('formations')"> Formations </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('competences')"> Compétences </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('achievements')"> Archièvements </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('projects')"> Projets </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('interests')"> Centre d'interêt </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block" onclick="goto('contact')"> Contacts </div>
+                    <div class="nav-item cursor-pointer d-sm-none d-md-block"> 0% </div>
+                </div>
+            </header>
+            <!-- ./header -->
+
+            <!-- welcome -->
+            <div class="row vh-75 d-flex flex-row justify-content-center align-content-center">
+                <div id="text-welcome" class=""></div>
+            </div>
+            <!-- ./welcome -->
+
+        </div>
+        <!-- ./home -->
+
+    </div>
+    <!-- ./container fluid -->
+
+    <script type="application/javascript" src="assets/js/scripts.js"></script>
+
+</body>
+</html>
